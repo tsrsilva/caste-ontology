@@ -3,7 +3,7 @@
 
 # caste-ontology
 
-This ontology... YOUR DESCRIPTION HERE
+Repository for the caste ontology development.
 
 ## Versions
 
