@@ -17,7 +17,7 @@ Not yet. We are starting to gather all the data needed for developing the ontolo
 
 ## How can I retrieve the contents of the ontology?
 
-CATO is an OWL ontology, meaning that it can be read in ontology editors and knowledge management systems, such as [Protégé][1]. Ee hope to have it picked up by services such as ONTOBEE and Bioportal.
+CATO is an OWL ontology, meaning that it can be read in ontology editors and knowledge management systems, such as [Protégé][1]. We hope to have it picked up by services such as ONTOBEE and Bioportal.
 
 ## Citing
 
