@@ -31,7 +31,7 @@ Datatype: idrange:1
         allocatedto: "Thiago Silva"
     
     EquivalentTo: 
-        xsd:integer[>= 0 , <= 999999]
+        xsd:integer[>= CATO:0010001 , <= CATO:0015000]
 
     
 Datatype: idrange:2
