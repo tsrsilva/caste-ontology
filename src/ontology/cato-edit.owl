@@ -1,4 +1,4 @@
-Prefix(:=<http://purl.obolibrary.org/obo/cato.owl/>)
+Prefix(:=<http://purl.obolibrary.org/obo/cato.owl#>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
@@ -7,24 +7,12 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/cato.owl>
-Import(<http://purl.obolibrary.org/obo/cato/imports/ro_import.owl>)
-Import(<http://purl.obolibrary.org/obo/cato/imports/pato_import.owl>)
 Import(<http://purl.obolibrary.org/obo/cato/imports/caro_import.owl>)
+Import(<http://purl.obolibrary.org/obo/cato/imports/pato_import.owl>)
+Import(<http://purl.obolibrary.org/obo/cato/imports/ro_import.owl>)
 Annotation(rdfs:comment "Caste Ontology")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/CATO_00000000>))
-Declaration(Class(<http://purl.obolibrary.org/obo/CATO_0010002>))
-Declaration(Class(<http://purl.obolibrary.org/obo/CATO_0010003>))
-Declaration(Class(<http://purl.obolibrary.org/obo/CATO_0010005>))
-Declaration(Class(<http://purl.obolibrary.org/obo/CATO_0010006>))
-Declaration(Class(<http://purl.obolibrary.org/obo/CATO_0010007>))
-Declaration(Class(<http://purl.obolibrary.org/obo/CATO_0010008>))
-Declaration(Class(<http://purl.obolibrary.org/obo/CATO_0010009>))
-Declaration(Class(<http://purl.obolibrary.org/obo/CATO_0010010>))
-Declaration(Class(<http://purl.obolibrary.org/obo/CATO_0010011>))
-Declaration(Class(<http://purl.obolibrary.org/obo/CATO_0010012>))
-Declaration(Class(<http://purl.obolibrary.org/obo/CATO_0010013>))
-Declaration(Class(<http://purl.obolibrary.org/obo/CATO_0010014>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/CATO_0010004>))
 ############################
 #   Annotation Properties
@@ -45,107 +33,6 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CATO_0010004> "da
 # Class: <http://purl.obolibrary.org/obo/CATO_00000000> (cato)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CATO_00000000> "cato"@en)
-
-# Class: <http://purl.obolibrary.org/obo/CATO_0010002> (organismal quality)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/CATO_0010004> <http://purl.obolibrary.org/obo/CATO_0010002> "PATO:0001995"^^xsd:string)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CATO_0010002> "A quality that inheres in an entire organism or part of an organism."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CATO_0010002> "Thiago Silva"^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CATO_0010002> "2019-01-12T17:31:21Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CATO_0010002> "organismal quality"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/CATO_0010002> <http://purl.obolibrary.org/obo/PATO_0000001>)
-
-# Class: <http://purl.obolibrary.org/obo/CATO_0010003> (anatomical quality)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CATO_0010003> "An organismal quality inhering in a bearer by virtue of the bearer's phenotypic organization."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CATO_0010003> "Thiago Silva"^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CATO_0010003> "2019-01-12T17:31:41Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CATO_0010003> "anatomical quality"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/CATO_0010003> <http://purl.obolibrary.org/obo/CATO_0010002>)
-
-# Class: <http://purl.obolibrary.org/obo/CATO_0010005> (aptery)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CATO_0010005> "An anatomical quality inhering in a bearer by virtue of the bearer's having developed or reduced/fused axillary sclerites, with absence of wings."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CATO_0010005> "Thiago Silva"^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CATO_0010005> "2019-01-12T17:39:41Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CATO_0010005> "aptery"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/CATO_0010005> <http://purl.obolibrary.org/obo/CATO_0010003>)
-
-# Class: <http://purl.obolibrary.org/obo/CATO_0010006> (brachyptery)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CATO_0010006> "An anatomical quality inhering in a bearer by virtue of the bearer's having developed and individualized or fused axillary sclerites, with reduced wings."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CATO_0010006> "Thiago Silva"^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CATO_0010006> "2019-01-12T17:40:02Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CATO_0010006> "brachyptery"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/CATO_0010006> <http://purl.obolibrary.org/obo/CATO_0010003>)
-
-# Class: <http://purl.obolibrary.org/obo/CATO_0010007> (macroptery)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CATO_0010007> "An anatomical quality inhering in a bearer by virtue of the bearer's having developed and individualized or fused axillary sclerites, with fully developed wings."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CATO_0010007> "Thiago Silva"^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CATO_0010007> "2019-01-12T17:40:33Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CATO_0010007> "macroptery"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/CATO_0010007> <http://purl.obolibrary.org/obo/CATO_0010003>)
-
-# Class: <http://purl.obolibrary.org/obo/CATO_0010008> (phenotypic mosaic)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CATO_0010008> "An anatomical quality inhering in a bearer by virtue of the bearer's having a unordered expression of diferential anatomical components."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CATO_0010008> "Thiago Silva"^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CATO_0010008> "2019-01-12T17:40:53Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CATO_0010008> "phenotypic mosaic"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/CATO_0010008> <http://purl.obolibrary.org/obo/CATO_0010003>)
-
-# Class: <http://purl.obolibrary.org/obo/CATO_0010009> (behavioral quality)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CATO_0010009> "An organismal quality inhering in a bearer by virtue of the bearer's behavior aggregate of the responses or reactions or movements in a given situation."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CATO_0010009> "Thiago Silva"^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CATO_0010009> "2019-01-12T17:44:05Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CATO_0010009> "behavioral quality"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/CATO_0010009> <http://purl.obolibrary.org/obo/CATO_0010002>)
-
-# Class: <http://purl.obolibrary.org/obo/CATO_0010010> (defense)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/CATO_0010004> <http://purl.obolibrary.org/obo/CATO_0010010> "SIBO:0000145"^^xsd:string)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CATO_0010010> "A behavioral quality inhering in a bearer by virtue of the bearer's ability to perform direct or indirect defensive behavior upon a resource."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CATO_0010010> "Thiago Silva"^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CATO_0010010> "2019-01-12T17:44:34Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CATO_0010010> "defense"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/CATO_0010010> <http://purl.obolibrary.org/obo/CATO_0010009>)
-
-# Class: <http://purl.obolibrary.org/obo/CATO_0010011> (foraging)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/CATO_0010004> <http://purl.obolibrary.org/obo/CATO_0010011> "SIBO:0000152"^^xsd:string)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CATO_0010011> "A behavioral quality inhering in a bearer by virtue of the bearer's ability to search for a generalized or specific trophic resource."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CATO_0010011> "Thiago Silva"^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CATO_0010011> "2019-01-12T17:45:16Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CATO_0010011> "foraging"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/CATO_0010011> <http://purl.obolibrary.org/obo/CATO_0010009>)
-
-# Class: <http://purl.obolibrary.org/obo/CATO_0010012> (resource processing)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CATO_0010012> "A behavioral quality inhering in a bearer by virtue of the bearer's ability to modify a generalized or specific resource by physical or chemical means."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CATO_0010012> "Thiago Silva"^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CATO_0010012> "2019-01-12T17:47:14Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CATO_0010012> "resource processing"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/CATO_0010012> <http://purl.obolibrary.org/obo/CATO_0010009>)
-
-# Class: <http://purl.obolibrary.org/obo/CATO_0010013> (biological sex)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/CATO_0010004> <http://purl.obolibrary.org/obo/CATO_0010013> "PATO:0000047"^^xsd:string)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CATO_0010013> "An organismal quality inhering in a bearer by virtue of the bearer's ability to undergo sexual reproduction in order to differentiate the individuals or types involved."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CATO_0010013> "Thiago Silva"^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CATO_0010013> "2019-01-12T17:48:00Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CATO_0010013> "biological sex"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/CATO_0010013> <http://purl.obolibrary.org/obo/CATO_0010002>)
-
-# Class: <http://purl.obolibrary.org/obo/CATO_0010014> (phenotypic sex)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/CATO_0010004> <http://purl.obolibrary.org/obo/CATO_0010014> "PATO:0001894"^^xsd:string)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CATO_0010014> "A biological sex quality inhering in an individual based upon phenotypic composition of mature individuals."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/CATO_0010014> "Thiago Silva"^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/CATO_0010014> "2019-01-12T17:48:53Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CATO_0010014> "phenotypic sex"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/CATO_0010014> <http://purl.obolibrary.org/obo/CATO_0010013>)
 
 
 )
