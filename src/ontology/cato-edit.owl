@@ -7,6 +7,7 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/cato.owl>
+Import(<http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl>)
 Import(<http://purl.obolibrary.org/obo/cato/imports/caro_import.owl>)
 Import(<http://purl.obolibrary.org/obo/cato/imports/pato_import.owl>)
 Import(<http://purl.obolibrary.org/obo/cato/imports/ro_import.owl>)
