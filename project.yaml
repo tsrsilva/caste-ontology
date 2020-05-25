@@ -1,0 +1,9 @@
+id: cato
+title: The Caste Ontology
+github_org: tsrsilva
+repo: caste-ontology
+import_group:
+  products:
+    - id: ro
+    - id: caro
+    - id: pato
