@@ -1,0 +1,853 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#"
+     xml:base="http://www.semanticweb.org/thiago/ontologies/2018/5/caste"
+     xmlns:phenotypic_mosaic="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste">
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The caste ontology that describes classes related to distinct categories of caste in ants.</rdfs:comment>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-06-25</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/caste#causally_influenced_by -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#causally_influenced_by">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#continuant"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/caste#has_axiom_label -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#has_axiom_label">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has axiom label</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/caste#has_exact_synonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#has_exact_synonym"/>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/caste#has_modifier -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#has_modifier"/>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/caste#has_phenotype -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#has_phenotype"/>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/caste#has_related_synonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#has_related_synonym"/>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/caste#has_synonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#has_synonym"/>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/caste#participates_in -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#participates_in"/>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/caste#term_editor -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#term_editor">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">term editor</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#database_cross_reference -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#database_cross_reference">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">database cross reference</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#definition">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#id"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/caste#causal_relation_between_organismal_quality_and_organismal_process -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#causal_relation_between_organismal_quality_and_organismal_process">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#causally_related_to"/>
+        <term_editor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thiago Silva</term_editor>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">causal relation between organismal quality and organismal process</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/caste#causally_influenced_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#causally_influenced_by">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#causal_relation_between_organismal_quality_and_organismal_process"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#organismal_quality"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/caste#causally_related_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#causally_related_to">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#related_via_dependence_to"/>
+        <term_editor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chris Mungall</term_editor>
+        <phenotypic_mosaic:database_cross_reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RO:0002410</phenotypic_mosaic:database_cross_reference>
+        <phenotypic_mosaic:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This relation groups causal relations between material entities and causal relations between processes</phenotypic_mosaic:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">causally related to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/caste#has_exact_synonym -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#has_exact_synonym">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#has_synonym"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/caste#has_modifier -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#has_modifier">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#continuant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/caste#has_phenotype -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#has_phenotype">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#continuant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/caste#has_related_synonym -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#has_related_synonym">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#has_synonym"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/caste#has_synonym -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#has_synonym"/>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/caste#participates_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#participates_in"/>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/caste#related_via_dependence_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#related_via_dependence_to">
+        <phenotypic_mosaic:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relationship that holds between two entities, where the relationship holds based on the presence or absence of statistical dependence relationship. The entities may be statistical variables, or they may be other kinds of entities such as diseases, chemical entities or processes.</phenotypic_mosaic:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">related via dependence to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/caste#allometry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#allometry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#growth"/>
+        <phenotypic_mosaic:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The growth of body parts at different rates, resulting in a change of body proportions.</phenotypic_mosaic:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/caste#apterous_female -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#apterous_female">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#female"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#has_phenotype"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#aptery"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <term_editor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thiago Silva</term_editor>
+        <phenotypic_mosaic:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A biological sex quality inhering in an individual that only produces gametes that can be fertilised by male gametes and having developed or reduced/fused axillary sclerites, with absence of wings.</phenotypic_mosaic:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">apterous female</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/caste#brachypterous_female -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#brachypterous_female">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#female"/>
+        <term_editor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thiago Silva</term_editor>
+        <phenotypic_mosaic:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A biological sex quality inhering in an individual that only produces gametes that can be fertilised by male gametes and having developed and individualized or fused axillary sclerites, with reduced wings.</phenotypic_mosaic:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">brachypterous female</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/caste#caste -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#caste">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#realizable_entity"/>
+        <term_editor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thiago Silva</term_editor>
+        <phenotypic_mosaic:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Caste is a realizable entity and caste exists because there is some single bearer that is in some special physical, physiological, developmental and social set of circumstances in which this bearer is conceived and caste is not such when the bearer ceases to exist.</phenotypic_mosaic:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/caste#continuant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#continuant">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#ocurrent"/>
+        <phenotypic_mosaic:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A continuant is an entity that persists, endures, or continues to exist through time while maintaining its identity. (axiom label in BFO2 Reference: [008-002])</phenotypic_mosaic:definition>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#continuant"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#definition"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A continuant is an entity that persists, endures, or continues to exist through time while maintaining its identity. (axiom label in BFO2 Reference: [008-002])</owl:annotatedTarget>
+        <has_axiom_label rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/008-002"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/caste#ergatoid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#ergatoid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#caste"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#causally_influenced_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#polyphenic_determination,_influence_by_environmental_factors"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#causally_influenced_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#polyphenic_determination,_influence_by_genetic_factors"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#has_modifier"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#fertile"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#has_phenotype"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#aptery"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <term_editor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thiago Silva</term_editor>
+        <phenotypic_mosaic:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A caste entity in which the bearer is apterous, fertile and which its polyphenic determination is influenced by genetic and environmental factors.</phenotypic_mosaic:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/caste#ergatoid_female -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#ergatoid_female">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#ergatoid"/>
+        <term_editor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thiago Silva</term_editor>
+        <phenotypic_mosaic:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ergatoid entity in which the biological sex of the bearer is female.</phenotypic_mosaic:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ergatoid female</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/caste#ergatoid_male -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#ergatoid_male">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#ergatoid"/>
+        <term_editor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thiago Silva</term_editor>
+        <phenotypic_mosaic:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ergatoid entity in which the biological sex of the bearer is male.</phenotypic_mosaic:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ergatoid male</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/caste#gamergate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#gamergate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#caste"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#causally_influenced_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#polyphenic_determination,_influence_by_genetic_factors"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#has_modifier"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#fertile"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#has_phenotype"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#aptery"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#has_phenotype"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#female"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <term_editor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thiago Silva</term_editor>
+        <phenotypic_mosaic:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A caste entity in which the bearer is female, apterous, fertile and which its polyphenic determination is influenced by genetic factors.</phenotypic_mosaic:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/caste#growth -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#growth">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#ocurrent"/>
+        <phenotypic_mosaic:database_cross_reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0016049</phenotypic_mosaic:database_cross_reference>
+        <phenotypic_mosaic:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The increase in size or mass of an entire organism, a part of an organism or a cell.</phenotypic_mosaic:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/caste#intercaste -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#intercaste">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#caste"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#causally_influenced_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#polyphenic_determination,_influence_by_environmental_factors"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#causally_influenced_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#polyphenic_determination,_influence_by_genetic_factors"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#has_phenotype"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#phenotypic_mosaic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#has_phenotype"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#female"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <term_editor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thiago Silva</term_editor>
+        <phenotypic_mosaic:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A caste entity in which the bearer is female, a mosaic of distinct phenotypes and which its polyphenic determination is influenced by genetic and environmental factors.</phenotypic_mosaic:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/caste#macropterous_female -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#macropterous_female">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#female"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#has_phenotype"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#macroptery"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <has_exact_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gyne</has_exact_synonym>
+        <term_editor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thiago Silva</term_editor>
+        <phenotypic_mosaic:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A biological sex quality inhering in an individual that only produces gametes that can be fertilised by male gametes and having developed and individualized or fused axillary sclerites, with fully developed wings.</phenotypic_mosaic:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">macropterous female</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/caste#major -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#major">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#caste"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#causally_influenced_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#allometry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#causally_influenced_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#polyphenic_determination,_influence_by_genetic_factors"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#has_modifier"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#sterile"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#has_phenotype"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#aptery"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#participates_in"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#defense"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <term_editor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thiago Silva</term_editor>
+        <phenotypic_mosaic:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A caste entity in which the bearer is female, apterous, sterile and which its polyphenic determination is influenced by genetic and environmental factors and allometric growth rates.</phenotypic_mosaic:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/caste#ocurrent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#ocurrent">
+        <phenotypic_mosaic:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An occurrent is an entity that unfolds itself in time or it is the instantaneous boundary of such an entity (for example a beginning or an ending) or it is a temporal or spatiotemporal region which such an entity occupies_temporal_region or occupies_spatiotemporal_region. (axiom label in BFO2 Reference: [077-002])</phenotypic_mosaic:definition>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#ocurrent"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#definition"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An occurrent is an entity that unfolds itself in time or it is the instantaneous boundary of such an entity (for example a beginning or an ending) or it is a temporal or spatiotemporal region which such an entity occupies_temporal_region or occupies_spatiotemporal_region. (axiom label in BFO2 Reference: [077-002])</owl:annotatedTarget>
+        <has_axiom_label rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/077-002"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/caste#phenotypic_mosaic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#phenotypic_mosaic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#anatomical_quality"/>
+        <term_editor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thiago Silva</term_editor>
+        <phenotypic_mosaic:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An anatomical quality inhering in a bearer by virtue of the bearer&apos;s having a unordered expression of diferential anatomical componentes.</phenotypic_mosaic:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phenotypic mosaic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/caste#queen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#queen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#caste"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#causally_influenced_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#polyphenic_determination,_influence_by_environmental_factors"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#causally_influenced_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#polyphenic_determination,_influence_by_genetic_factors"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#has_modifier"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#fertile"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#has_phenotype"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#female"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#has_phenotype"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#macroptery"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <has_exact_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gyne</has_exact_synonym>
+        <term_editor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thiago Silva</term_editor>
+        <phenotypic_mosaic:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A caste entity in which the bearer is female, macropterous, fertile and which its polyphenic determination is influenced by genetic and environmental factors.</phenotypic_mosaic:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/caste#realizable_entity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#realizable_entity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#continuant"/>
+        <phenotypic_mosaic:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To say that b is a realizable entity is to say that b is a specifically dependent continuant that inheres in some independent continuant which is not a spatial region and is of a type instances of which are realized in processes of a correlated type. (axiom label in BFO2 Reference: [058-002])</phenotypic_mosaic:definition>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">realizable entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/caste#soldier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#soldier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#major"/>
+        <term_editor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thiago Silva</term_editor>
+        <phenotypic_mosaic:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A caste entity in which the bearer is female, apterous, sterile and which its polyphenic determination is influenced by genetic and environmental factors and allometric growth rates, performing exclusively direct or indirect defensive roles.</phenotypic_mosaic:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/caste#worker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#worker">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#caste"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#causally_influenced_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#polyphenic_determination,_influence_by_environmental_factors"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#causally_influenced_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#polyphenic_determination,_influence_by_genetic_factors"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#has_modifier"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#sterile"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#has_phenotype"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#aptery"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#has_phenotype"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#female"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <term_editor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thiago Silva</term_editor>
+        <phenotypic_mosaic:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A caste entity in which the bearer is female, apterous, sterile and which its polyphenic determination is influenced by genetic and environmental factors.</phenotypic_mosaic:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#anatomical_quality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#anatomical_quality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#organismal_quality"/>
+        <phenotypic_mosaic:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organismal quality inhering in a bearer by virtue of the bearer&apos;s phenotypic organization.</phenotypic_mosaic:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anatomical quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#aptery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#aptery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#anatomical_quality"/>
+        <phenotypic_mosaic:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An anatomical quality inhering in a bearer by virtue of the bearer&apos;s having developed or reduced/fused axillary sclerites, with absence of wings.</phenotypic_mosaic:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#behavioral_quality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#behavioral_quality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#organismal_quality"/>
+        <phenotypic_mosaic:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organismal quality inhering in a bearer by virtue of the bearer&apos;s behavior aggregate of the responses or reactions or movements in a given situation.</phenotypic_mosaic:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behavioral quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#biological_sex_quality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#biological_sex_quality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#organismal_quality"/>
+        <phenotypic_mosaic:database_cross_reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0000047</phenotypic_mosaic:database_cross_reference>
+        <phenotypic_mosaic:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organismal quality inhering in a bearer by virtue of the bearer&apos;s ability to undergo sexual reproduction in order to differentiate the individuals or types involved.</phenotypic_mosaic:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological sex</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#brachyptery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#brachyptery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#anatomical_quality"/>
+        <phenotypic_mosaic:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An anatomical quality inhering in a bearer by virtue of the bearer&apos;s having developed and individualized or fused axillary sclerites, with reduced wings.</phenotypic_mosaic:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#defense -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#defense">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#behavioral_quality"/>
+        <phenotypic_mosaic:database_cross_reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SIBO:0000145</phenotypic_mosaic:database_cross_reference>
+        <phenotypic_mosaic:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behavioral quality inhering in a bearer by virtue of the bearer&apos;s ability to perform direct or indirect defensive behavior upon a resource.</phenotypic_mosaic:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#female -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#female">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#&apos;phenotypic_sex&apos;"/>
+        <phenotypic_mosaic:database_cross_reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0000383</phenotypic_mosaic:database_cross_reference>
+        <phenotypic_mosaic:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A biological sex quality inhering in an individual or a population that only produces gametes that can be fertilised by male gametes.</phenotypic_mosaic:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#fertile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#fertile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#reproductive_quality"/>
+        <phenotypic_mosaic:database_cross_reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0000955</phenotypic_mosaic:database_cross_reference>
+        <phenotypic_mosaic:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fertility quality inhering in a bearer by virtue of the bearer&apos;s being capable of initiating, sustaining, or supporting reproduction.</phenotypic_mosaic:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#foraging -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#foraging">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#behavioral_quality"/>
+        <phenotypic_mosaic:database_cross_reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SIBO:0000152</phenotypic_mosaic:database_cross_reference>
+        <phenotypic_mosaic:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behavioral quality inhering in a bearer by virtue of the bearer&apos;s ability to search for a generalized or specific trophic resource.</phenotypic_mosaic:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#macroptery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#macroptery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#anatomical_quality"/>
+        <phenotypic_mosaic:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An anatomical quality inhering in a bearer by virtue of the bearer&apos;s having developed and individualized or fused axillary sclerites, with fully developed wings.</phenotypic_mosaic:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#male -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#male">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#&apos;phenotypic_sex&apos;"/>
+        <phenotypic_mosaic:database_cross_reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0000384</phenotypic_mosaic:database_cross_reference>
+        <phenotypic_mosaic:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A biological sex quality inhering in an individual or a population whose sex organs contain only male gametes.</phenotypic_mosaic:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#multicellular_organismal_process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#multicellular_organismal_process">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#ocurrent"/>
+        <phenotypic_mosaic:database_cross_reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0032501</phenotypic_mosaic:database_cross_reference>
+        <phenotypic_mosaic:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any biological process, occurring at the level of a multicellular organism, pertinent to its function.</phenotypic_mosaic:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">multicellular organismal process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#organismal_quality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#organismal_quality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#continuant"/>
+        <phenotypic_mosaic:database_cross_reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001995</phenotypic_mosaic:database_cross_reference>
+        <phenotypic_mosaic:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality that inheres in an entire organism or part of an organism.</phenotypic_mosaic:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organismal quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#polyphenic_determination -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#polyphenic_determination">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#multicellular_organismal_process"/>
+        <phenotypic_mosaic:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The process in which individuals that have the potential to develop any of several possible distinct developmental paths have their individual developmental fates determined in response to environmental and/or genetic cues.</phenotypic_mosaic:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polyphenic determination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#reproductive_quality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#reproductive_quality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#organismal_quality"/>
+        <phenotypic_mosaic:database_cross_reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0000186</phenotypic_mosaic:database_cross_reference>
+        <phenotypic_mosaic:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organismal quality inhering in a bearer by virtue of the bearer&apos;s behavior aggregate of the responses or reactions or movements in a given situation.</phenotypic_mosaic:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reproductive quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#resource_processing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#resource_processing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#behavioral_quality"/>
+        <phenotypic_mosaic:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behavioral quality inhering in a bearer by virtue of the bearer&apos;s ability to modify a generalized or specific resource by physical or chemical means.</phenotypic_mosaic:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">resource processing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#sterile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#sterile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#reproductive_quality"/>
+        <phenotypic_mosaic:database_cross_reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0000956</phenotypic_mosaic:database_cross_reference>
+        <phenotypic_mosaic:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fertility quality inhering in a bearer by virtue of the bearer&apos;s being incapable of initiating, sustaining, or supporting reproduction.</phenotypic_mosaic:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#&apos;phenotypic_sex&apos; -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#&apos;phenotypic_sex&apos;">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#biological_sex_quality"/>
+        <phenotypic_mosaic:database_cross_reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001894</phenotypic_mosaic:database_cross_reference>
+        <phenotypic_mosaic:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A biological sex quality inhering in an individual based upon phenotypic composition of mature individuals.</phenotypic_mosaic:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phenotypic sex</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#polyphenic_determination,_influence_by_environmental_factors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#polyphenic_determination,_influence_by_environmental_factors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#polyphenic_determination"/>
+        <phenotypic_mosaic:database_cross_reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0048651</phenotypic_mosaic:database_cross_reference>
+        <phenotypic_mosaic:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The process in which individuals that have the potential to develop any of several possible distinct developmental paths have their individual developmental fates determined in response to environmental cues.</phenotypic_mosaic:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polyphenic determination, influence by environmental factors</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#polyphenic_determination,_influence_by_genetic_factors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#polyphenic_determination,_influence_by_genetic_factors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thiago/ontologies/2018/5/phenotypic_mosaic#polyphenic_determination"/>
+        <phenotypic_mosaic:database_cross_reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0048652</phenotypic_mosaic:database_cross_reference>
+        <phenotypic_mosaic:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The process in which individuals that have the potential to develop any of several possible distinct developmental paths have their individual developmental fates determined in response to genetic cues.</phenotypic_mosaic:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polyphenic determination, influence by genetic factors</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#causally_influenced_by">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">causally influenced by</rdfs:label>
+        <phenotypic_mosaic:database_cross_reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RO:0002559</phenotypic_mosaic:database_cross_reference>
+        <phenotypic_mosaic:definition rdf:resource="http://purl.obolibrary.org/obo/ro/docs/causal-relations"/>
+        <term_editor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chris Mungall</term_editor>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#has_exact_synonym">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has exact synonym</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#has_modifier">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has modifier</rdfs:label>
+        <phenotypic_mosaic:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relation that holds between an attribute or a qualifier and another attribute.</phenotypic_mosaic:definition>
+        <term_editor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chris Mungall</term_editor>
+        <phenotypic_mosaic:database_cross_reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RO:0002573</phenotypic_mosaic:database_cross_reference>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#has_phenotype">
+        <term_editor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thiago Silva</term_editor>
+        <phenotypic_mosaic:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relationship that holds between a biological entity and a phenotype. Here a phenotype is construed broadly as any kind of quality of an organism part, a collection of these qualities, or a change in quality or qualities (e.g. abnormally increased temperature). The subject of this relationship can be an organism (where the organism has the phenotype, i.e. the qualities inhere in parts of this organism), a genomic entity such as a gene or genotype (if modifications of the gene or the genotype causes the phenotype), or a condition such as a disease (such that if the condition inheres in an organism, then the organism has the phenotype).</phenotypic_mosaic:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has phenotype</rdfs:label>
+        <phenotypic_mosaic:database_cross_reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RO:0002200</phenotypic_mosaic:database_cross_reference>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#has_related_synonym">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has related synonym</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#has_synonym">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has synonym</rdfs:label>
+        <phenotypic_mosaic:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This object property groups distinct types of synonimic object properties.</phenotypic_mosaic:definition>
+        <term_editor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thiago Silva</term_editor>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/thiago/ontologies/2018/5/caste#participates_in">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">participates in</rdfs:label>
+        <phenotypic_mosaic:database_cross_reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RO:0000056</phenotypic_mosaic:database_cross_reference>
+        <phenotypic_mosaic:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A relation between a continuant and a process, in which the continuant is somehow involved in the process.</phenotypic_mosaic:definition>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
