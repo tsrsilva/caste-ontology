@@ -1,5 +1,6 @@
-[![Build Status](https://travis-ci.org/tsrsilva/caste-ontology.svg?branch=master)](https://travis-ci.org/tsrsilva/caste-ontology)
 [![DOI](https://zenodo.org/badge/13996/tsrsilva/caste-ontology.svg)](https://zenodo.org/badge/latestdoi/13996/tsrsilva/caste-ontology)
+
+# This project has been discontinued!!!
 
 # CATO - The Caste Ontology
 
